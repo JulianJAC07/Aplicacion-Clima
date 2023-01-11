@@ -12,14 +12,14 @@ export default function WeatherMainInfo({weather}) {
         <div className={styles.row}>
             
             <div>
-                <img src={`${weather?.current.weather_icons}`} width="150"  alt={weather?.current.weather_descriptions} />
+                <img src={`${weather?.current.condition.icon}`} width="150"  alt={weather?.current.weather_descriptions} />
             </div>
             
             <div className={styles.weatherConditions}>
                 
-                <div className={styles.condition}>{weather?.current.temperature}° </div>
+                <div className={styles.condition}>{weather?.current.temp_c}° </div>
                 
-                <div className={styles.current}>{weather?.current.observation_time} </div>
+                <div className={styles.current}>{weather?.current.last_updated} </div>
             </div>
         </div>
         

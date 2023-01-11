@@ -1,13 +1,13 @@
 .weatherContainer{
     width:500px;
     height: 50px;
-    margin :150px auto;
+    margin:0px auto;
 
 }
 .weather{
     text-align: center;
     text-shadow: 5px black;
-    color:rgb(75, 29, 119);
-    background-color: rgba(178, 109, 243,50);
+    color:rgb(255, 255, 255);
+    background-color: rgba(72, 48, 94, 0.7);
     
 }

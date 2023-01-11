@@ -21,7 +21,7 @@ import styles from './weatherApp.module.css';
 
     async function loadInfo(city='london'){
         try {
-            const request = await fetch(`${process.env.REACT_APP_URL}?access_key=${process.env.REACT_APP_KEY}&query=${city}`);
+            const request = await fetch(`${process.env.REACT_APP_URL}.json?key=${process.env.REACT_APP_KEY}&q=${city}&aqi=no`);
             
             const json = await request.json();
 
